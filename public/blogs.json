@@ -5,7 +5,7 @@
       "title": "The Art of Creativity",
       "author_img": "author1.jpg",
       "posted_date": "2023-09-10",
-      "reading_time": "5",
+      "reading_time": 5,
       "hashtags": ["creativity", "inspiration", "art"]
     },
     {
@@ -14,7 +14,7 @@
       "title": "Exploring Space Travel",
       "author_img": "author2.jpg",
       "posted_date": "2023-09-09",
-      "reading_time": "2",
+      "reading_time": 2,
       "hashtags": ["space", "science", "exploration"]
     },
     {
@@ -23,7 +23,7 @@
       "title": "Healthy Eating Habits",
       "author_img": "author3.jpg",
       "posted_date": "2023-09-08",
-      "reading_time": "7",
+      "reading_time": 7,
       "hashtags": ["health", "nutrition", "wellness"]
     },
     {
@@ -32,7 +32,7 @@
       "title": "Tech Trends 2023",
       "author_img": "author4.jpg",
       "posted_date": "2023-09-07",
-      "reading_time": "3",
+      "reading_time": 3,
       "hashtags": ["technology", "trends", "innovation"]
     },
     {
@@ -41,7 +41,7 @@
       "title": "Traveling the World",
       "author_img": "author5.jpg",
       "posted_date": "2023-09-06",
-      "reading_time": "4",
+      "reading_time": 4,
       "hashtags": ["travel", "adventure", "explore"]
     },
     {
@@ -50,7 +50,7 @@
       "title": "Financial Freedom Guide",
       "author_img": "author6.jpg",
       "posted_date": "2023-09-05",
-      "reading_time": "2",
+      "reading_time": 2,
       "hashtags": ["finance", "investing", "savings"]
     },
     {
@@ -59,7 +59,7 @@
       "title": "The Art of Storytelling",
       "author_img": "author7.jpg",
       "posted_date": "2023-09-04",
-      "reading_time": "10",
+      "reading_time": 10,
       "hashtags": ["storytelling", "narrative", "communication"]
     },
     {
@@ -68,7 +68,7 @@
       "title": "Exploring Wildlife Photography",
       "author_img": "author8.jpg",
       "posted_date": "2023-09-03",
-      "reading_time": "12",
+      "reading_time": 12,
       "hashtags": ["photography", "wildlife", "nature"]
     },
     {
@@ -77,7 +77,7 @@
       "title": "The Science of Meditation",
       "author_img": "author9.jpg",
       "posted_date": "2023-09-02",
-      "reading_time": "16",
+      "reading_time": 16,
       "hashtags": ["meditation", "mindfulness", "wellbeing"]
     },
     {
@@ -86,7 +86,7 @@
       "title": "Gourmet Cooking Secrets",
       "author_img": "author10.jpg",
       "posted_date": "2023-09-01",
-      "reading_time": "21",
+      "reading_time": 21,
       "hashtags": ["cooking", "food", "recipes"]
     }
   ]
