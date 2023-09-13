@@ -14,8 +14,10 @@ function App() {
   const handleAddToBookmark = blog => {
     // console.log(blog);
     //adding new item to old item from state array and set the whole item into the set method
-    const newBookmarks = [...bookmarks, blog];
-    setBookmarks(newBookmarks);
+    if(!bookmarks.includes(blog)){
+      const newBookmarks = [...bookmarks, blog];
+      setBookmarks(newBookmarks);
+    }
   }
   //event handler for total reading time of blogs
   const handleMarkAsRead = time =>{

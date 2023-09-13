@@ -16,7 +16,7 @@ const Blogs = ({handleAddToBookmark,handleMarkAsRead}) => {
     },[]);
     return (
         <div className="md:w-2/3 mx-auto">
-            <h1 className="text-4xl">Blogs: {blogs.length}</h1>
+            <h1 className="text-3xl font-bold py-4">Total no of Blogs: {blogs.length}</h1>
             {
                 //map each blog to show dynamically and sending props
                 blogs.map(blog => <Blog 

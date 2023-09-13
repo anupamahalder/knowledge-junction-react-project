@@ -4,7 +4,7 @@ const Bookmarks = ({bookmarks,readingTime}) => {
     return (
         <>
         <div className='md:w-1/3 mx-auto px-2'>
-            <div className='text-purple-800 text-2xl p-4 border-2 m-2 border-purple-800 rounded-xl'>
+            <div className='text-purple-800 text-2xl p-4 border-4 m-2 border-purple-800 rounded-xl'>
                 <h3>Spent time on read : <span>{readingTime}</span> min</h3>
             </div>
             <div><h2 className="text-3xl font-bold p-3 mx-auto">Bookmarked Blogs: {bookmarks.length}</h2></div>
