@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Header></Header>
-    <div className='md:flex py-2'>
+    <div className='md:flex py-2 max-w-7xl mx-auto'>
       <Blogs></Blogs>
       <Bookmarks></Bookmarks>
     </div>
