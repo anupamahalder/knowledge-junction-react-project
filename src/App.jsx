@@ -9,7 +9,10 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   //event handler
   const handleAddToBookmark = blog => {
-    console.log('bookmark adding soon');
+    // console.log(blog);
+    //adding new item to old item from state array and set the whole item into the set method
+    const newBookmarks = [...bookmarks, blog];
+    setBookmarks(newBookmarks);
   }
   return (
     <>
@@ -17,7 +20,8 @@ function App() {
     <div className='md:flex py-2 max-w-7xl mx-auto'>
       {/* sending props  */}
       <Blogs handleAddToBookmark={handleAddToBookmark}></Blogs>
-      <Bookmarks></Bookmarks>
+      {/* sending props to bookmarks component  */}
+      <Bookmarks bookmarks={bookmarks}></Bookmarks>
     </div>
     </>
   )

@@ -18,7 +18,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
                     <p className='mr-2 mt-4'>{reading_time} min read</p>
 
                     <button
-                        onClick={handleAddToBookmark}
+                        onClick={()=>handleAddToBookmark(blog)}
                         className='text-2xl hover:text-red-600'><PiBookmarksBold></PiBookmarksBold></button>
                 </div>
             </div>
@@ -35,6 +35,7 @@ const Blog = ({blog,handleAddToBookmark}) => {
 };
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddToBookmark: PropTypes.func.isRequired
 }
 export default Blog;

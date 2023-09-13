@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Blog from "../Blog/Blog";
+import PropTypes from 'prop-types';
 
 const Blogs = ({handleAddToBookmark}) => {
     //We need state to hold data
@@ -27,5 +28,8 @@ const Blogs = ({handleAddToBookmark}) => {
         </div>
     );
 };
-
+//adding prop types
+Blogs.propTypes = {
+    handleAddToBookmark: PropTypes.func.isRequired
+}
 export default Blogs;
