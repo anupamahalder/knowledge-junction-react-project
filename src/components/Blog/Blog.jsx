@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import {FaBookmark} from 'react-icons/fa';
-const Blog = ({blog}) => {
+import {PiBookmarksBold} from 'react-icons/pi';
+const Blog = ({blog,handleAddToBookmark}) => {
     //destructuring from blog
     const {title, cover_img, author_img,reading_time,author,posted_date,hashtags} = blog;
     return (
@@ -14,9 +14,12 @@ const Blog = ({blog}) => {
                         <p className='text-gray-500'>{posted_date}</p>
                     </div>
                 </div>
-                <div className="place-content-center mr-2">
-                    <span className='mr-2 pb-4'>{reading_time} min read</span>
-                    <button className='text-xl text-red-700 hover:text-black hover:bg-white'><FaBookmark></FaBookmark></button>
+                <div className="mr-2 flex justify-center">
+                    <p className='mr-2 mt-4'>{reading_time} min read</p>
+
+                    <button
+                        onClick={handleAddToBookmark}
+                        className='text-2xl hover:text-red-600'><PiBookmarksBold></PiBookmarksBold></button>
                 </div>
             </div>
             <h2 className='text-3xl font-bold'>{title}</h2>
