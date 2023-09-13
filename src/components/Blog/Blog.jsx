@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import {PiBookmarksBold} from 'react-icons/pi';
-const Blog = ({blog,handleAddToBookmark}) => {
+const Blog = ({blog,handleAddToBookmark,handleMarkAsRead}) => {
     //destructuring from blog
     const {title, cover_img, author_img,reading_time,author,posted_date,hashtags} = blog;
     return (
@@ -29,13 +29,16 @@ const Blog = ({blog,handleAddToBookmark}) => {
                     hashtags.map((hash,idx) => <span key={idx}><a href=''>#{hash} </a></span>)
                 }
             </p>
-            <a className='underline hover:text-purple-600' href=''>Mark as read</a>
+            <button  
+                onClick={()=>handleMarkAsRead(reading_time)}
+                className='underline text-purple-800 hover:text-black'>Mark as read</button>
         </div>
     );
 };
 
 Blog.propTypes = {
     blog: PropTypes.object.isRequired,
-    handleAddToBookmark: PropTypes.func.isRequired
+    handleAddToBookmark: PropTypes.func.isRequired,
+    handleMarkAsRead: PropTypes.func.isRequired
 }
 export default Blog;
